@@ -317,11 +317,17 @@ nav {
   }
 }
 
-@media screen and (max-width: 756px){
+@media screen and (max-width: 556px){
   .news-rigth {
     flex-direction: column;
     justify-content: center;
     width: 100%;
   }
+
+  .slider-container {
+    width: 100%;
+  }
+
 }
+
 
