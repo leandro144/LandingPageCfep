@@ -37,17 +37,25 @@ const Header = () => {
               <FaChevronDown color='#fff' fontSize={12} />
             </span>
             <ul className="dropdown-content">
-              <li>Diário da união</li>
-              <li>Código de ética</li>
+              <li><a href="">Diário da união</a></li>
+              <li><a href="#">Código de Ética</a></li>
             </ul>
           </div>
           <div className="vertical-line"></div>
           <div className="items">
-            <p>CURSOS</p>
+            <p>SOBRE</p>
           </div>
           <div className="vertical-line"></div>
           <div className="items">
-            <p>BIBLIOTECA</p>
+            <a href="https://catalogo.drmeducacao.com.br/sessao-2?tutors=1184041">
+              <p>CURSOS</p>
+            </a>
+          </div>
+          <div className="vertical-line"></div>
+          <div className="items">
+            <a href="https://www.biblion.org.br/?utm_medium=google&utm_campaign=download_de_app_2022&utm_so">
+              <p>BIBLIOTECA</p>
+            </a>  
           </div>
           <div className="vertical-line"></div>
           <div className="items">
@@ -56,10 +64,9 @@ const Header = () => {
               <FaChevronDown color='#fff' fontSize={12} />
             </span>
             <ul className="dropdown-content">
-              <li>Certidão de registro</li>
-              <li>CFEP digital</li>
-              <li>Identidade profissional</li>
-              <li>Listas de tarefas</li>
+              <li><a href="#">Certidão de registro</a></li>
+              <li><a href="https://www.cfepmembros.com.br/login">CFEP DIGITAL</a></li>
+              <li><a href="https://zingy-bombolone-f16a1d.netlify.app/">Listas de Tarefas</a></li>
             </ul>
           </div>
           <div className="vertical-line"></div>
