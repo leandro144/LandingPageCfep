@@ -37,13 +37,15 @@ const Header = () => {
               <FaChevronDown color='#fff' fontSize={12} />
             </span>
             <ul className="dropdown-content">
-              <li><a href="">Diário da união</a></li>
-              <li><a href="#">Código de Ética</a></li>
+              <li><a href="http://localhost:5173/sobre">Diário da união</a></li>
+              <li><a href="http://localhost:5173/sobre">Código de Ética</a></li>
             </ul>
           </div>
           <div className="vertical-line"></div>
           <div className="items">
-            <p>SOBRE</p>
+            <a href="http://localhost:5173/sobre">
+              <p>SOBRE</p>
+            </a>
           </div>
           <div className="vertical-line"></div>
           <div className="items">
