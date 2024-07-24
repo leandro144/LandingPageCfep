@@ -131,9 +131,7 @@ return (
         <div className="line"></div>
         <p>A identidade profissional é documento exclusivo para o profissional da área da educação. Este documento
             servirá não só para identifica-lo mas também disponibilizara benefícios e vantagens em nossa rede de
-            estabelecimentos conveniados.
-
-            ​</p>
+            estabelecimentos conveniados.​</p>
         <div className="cards-carteira">
             <img src={rosa} alt="" />
             <img src={azul} alt="" />

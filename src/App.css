@@ -310,8 +310,11 @@ nav {
 
 .youtube {
   width: 85%;
-  margin: 0 auto;
-  padding: 2rem 0;
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: #0060A0;
+  border-radius: 10px;
+  color: #fff;
 }
 
 .cards {
@@ -344,6 +347,7 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
   align-items: center;
 }
 .btn-pro {
@@ -430,7 +434,7 @@ footer {
 }
 
 .cards-info h3 {
-  color: #0060A0 !important;
+  color: #fff !important;
 }
 
 /* ABOUT - 2° PÁGINA */
@@ -561,5 +565,30 @@ footer {
   }
 
 }
+
+@media screen and (max-width: 457px) {
+  .icon-adm {
+    display: none;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .cards-carteira {
+  justify-content: center;
+}
+}
+
+
+
 
 

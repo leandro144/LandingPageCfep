@@ -20,10 +20,11 @@ const Header = () => {
       </header>
       <div className="subnavbar">
         <div className="navbar">
-          <div className="logo"><img src={logo} alt="logo" /></div>
+          <div className="logo">
+            <a href="/"><img src={logo} alt="logo" /></a></div>
           <div className="find">
             <div className="search">
-              <input type="search" name="search" id="search" placeholder='o que você está procurando' />
+              <input type="search" name="search" id="search" placeholder='Procure por pós graduações' />
               <FaSearch />
             </div>
           </div>
