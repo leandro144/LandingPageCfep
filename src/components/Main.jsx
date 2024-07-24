@@ -1,20 +1,31 @@
-import React from 'react'
-import news1 from '../assets/news-1.jpg'
-import news2 from '../assets/news-3.png'
-import news3 from '../assets/news-3.jpg'
-import news4 from '../assets/news-4.jpg'
-import news5 from '../assets/news-5.jpg'
-import news6 from '../assets/news-6.jpg'
-import you1 from '../assets/you1.png'
-import you2 from '../assets/you2.png'
-import you3 from '../assets/you3.png'
-import you4 from '../assets/you4.png'
+import React, { useState } from 'react';
+import news1 from '../assets/news-1.jpg';
+import news2 from '../assets/news-3.png';
+import news3 from '../assets/news-3.jpg';
+import news4 from '../assets/news-4.jpg';
+import news5 from '../assets/news-5.jpg';
+import news6 from '../assets/news-6.jpg';
+import you1 from '../assets/you1.png';
+import you3 from '../assets/you3.png';
+import you4 from '../assets/you4.png';
+import rosa from '../assets/rosa.png';
+import azul from '../assets/azul.png';
+import bege from '../assets/bege.png';
 
 const Main = () => {
+const [isModalOpen, setIsModalOpen] = useState(false);
 
 const handleNavigate = () => {
 window.location.href = 'https://www.cfepmembros.com.br/inscricao';
-}
+};
+
+const handleOpenModal = () => {
+setIsModalOpen(true);
+};
+
+const handleCloseModal = () => {
+setIsModalOpen(false);
+};
 
 return (
 <>
@@ -115,6 +126,21 @@ return (
             <button className="btn-sign" onClick={handleNavigate}>OBTER CERTIFICADO</button>
         </div>
     </div>
+    <div className="identidade">
+        <h1>Identidade Profissional</h1>
+        <div className="line"></div>
+        <p>A identidade profissional é documento exclusivo para o profissional da área da educação. Este documento
+            servirá não só para identifica-lo mas também disponibilizara benefícios e vantagens em nossa rede de
+            estabelecimentos conveniados.
+
+            ​</p>
+        <div className="cards-carteira">
+            <img src={rosa} alt="" />
+            <img src={azul} alt="" />
+            <img src={bege} alt="" />
+        </div>
+        <button className="btn-pro" onClick={handleOpenModal}>Saiba Mais</button>
+    </div>
     <div className="youtube">
         <h1>CFEP no YouTube</h1>
         <div className="line"></div>
@@ -139,13 +165,42 @@ return (
             </div>
         </div>
     </div>
-    <div className="card-info">
-        <div className="text-info">
-            <h2>Descontos em nossas parcerias <br />como: <span id='italic'>Faculdades <br />Cursos e etc.</span></h2>
+    {isModalOpen && (
+    <div className="modal">
+        <div className="modal-content">
+            <span className="close" onClick={handleCloseModal}>&times;</span>
+            <h2>Obtenha sua Carteira Profissional</h2>
+            <h3>Quem pode fazer a inscrição?</h3>
+            <p>Educador(a), Pedagogo(a) e Estagiário(a), das redes particulares e conveniadas junto as Secretarias de
+                Educação Municipais e Estaduais.
+            </p>
+            <br />
+            <h3>Quais as documentações necessárias para inscrever-se como Educador ou Pedagogo?</h3>
+            <p>• Diploma ou Certificado de Conclusão do Curso Superior ou equivalente a licenciatura.
+                <br />
+                • Cópia do RG, CPF e titulo de eleitor;
+                <br />
+                • Comprovante de Residência Atual;
+                <br />
+                • 01 Foto 3x4 recente.</p>
+            <br />
+            <h3>Qual a documentação necessária para inscrever-se com Estagiário?</h3>
+            <p>• Estar cursando a partir do 3° semestre do curso superior ou equivalente em Pedagogia;
+                <br />
+                • Declaração de matricula da Instituição de Ensino;
+                <br />
+                • Cópia do RG, CPF e título de eleitor;
+                <br />
+                • Comprovante de Residência Atual;
+                <br />
+                • 01 Foto 3x4 recente.</p>
+                <br />
+                <button className="btn-sign" onClick={handleNavigate}>OBTER CARTEIRA</button>
         </div>
     </div>
+    )}
 </>
-)
-}
+);
+};
 
-export default Main
+export default Main;

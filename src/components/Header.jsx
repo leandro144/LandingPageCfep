@@ -37,13 +37,13 @@ const Header = () => {
               <FaChevronDown color='#fff' fontSize={12} />
             </span>
             <ul className="dropdown-content">
-              <li><a href="https://landing-page-cfep.vercel.app/sobre">Diário da união</a></li>
-              <li><a href="https://landing-page-cfep.vercel.app/sobre">Código de Ética</a></li>
+              <li><a href="/sobre">Diário da união</a></li>
+              <li><a href="/sobre">Código de Ética</a></li>
             </ul>
           </div>
           <div className="vertical-line"></div>
           <div className="items">
-            <a href="https://landing-page-cfep.vercel.app/sobre">
+            <a href="/sobre">
               <p>SOBRE</p>
             </a>
           </div>
@@ -73,7 +73,9 @@ const Header = () => {
           </div>
           <div className="vertical-line"></div>
           <div className="items">
-            <p>FALE CONOSCO</p>
+            <a href="/faleconosco">
+              <p>FALE CONOSCO</p>
+            </a>
           </div>
           <div className="vertical-line"></div>
           <div className="items">

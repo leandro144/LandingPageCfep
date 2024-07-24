@@ -10,7 +10,9 @@ const Home = () => {
         <Header />
         <SimpleSlider />
         <Main />
-        <Footer />
+        <div className="footer">
+          <Footer />
+        </div>
     </>
   )
 }

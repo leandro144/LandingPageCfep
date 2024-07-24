@@ -55,7 +55,6 @@ return (
         <h1>Publicações</h1>
         <div className="line"></div>
         <div className="container-publication">
-            <br /><br />
             <span>
                 <a href="../downloads/ética" download='ética.pdf'>
                     <FaFilePdf fontSize={80} color='#003058' />
