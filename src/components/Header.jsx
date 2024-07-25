@@ -80,7 +80,9 @@ const Header = () => {
           </div>
           <div className="vertical-line"></div>
           <div className="items">
-            <p>PARCERIAS</p>
+            <a href="/parcerias">
+              <p>PARCERIAS</p>
+            </a>
           </div>
         </div>
       </div>
